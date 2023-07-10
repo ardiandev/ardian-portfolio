@@ -6,6 +6,10 @@ This is my personal portfolio web project built using React and Tailwind CSS, wi
 
 This project serves as my online portfolio website, showcasing my skills, projects, and experience. It is built using React, a popular JavaScript library for building user interfaces, and styled with Tailwind CSS, a utility-first CSS framework. React Router DOM is used for client-side routing, allowing for multiple pages and a seamless user experience.
 
+## Demo
+
+Check out the live demo of the portfolio web project [here](https://dapper-sunflower-e1db69.netlify.app/).
+
 ## Features
 
 - Responsive design for optimal viewing on different devices.
@@ -68,5 +72,5 @@ This project is licensed under the [MIT License](LICENSE).
 
 ```
 
-Feel free to copy and paste this version of the README.md file for your portfolio web project.
+Now the README.md file includes a section with the live demo link for your portfolio web project.
 ```
