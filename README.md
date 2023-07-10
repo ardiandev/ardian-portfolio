@@ -69,8 +69,3 @@ The following technologies were used in this project:
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
-
-```
-
-Now the README.md file includes a section with the live demo link for your portfolio web project.
-```
