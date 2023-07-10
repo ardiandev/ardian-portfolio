@@ -1,16 +1,18 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <header className="flex h-12 bg-red-300 px-3 justify-between items-center sticky top-0">
-      <h1>A</h1>
+    <header className="container mx-auto flex py-4 px-3 justify-between items-center sticky top-0 bg-[#0c2540] ">
+      <h1 className="font-bold text-2xl  round-full p-[4px] border-2">
+        <Link to="/">AP</Link>
+      </h1>
       <nav>
         <ul className="flex gap-3">
           <li>
             <NavLink
               to="/"
               style={({ isActive }) => {
-                return { color: isActive ? "Blue" : "Green" };
+                return { color: isActive ? "#fff" : "#a6c7e5" };
               }}
             >
               Home
@@ -20,7 +22,7 @@ const Navbar = () => {
             <NavLink
               to="/about"
               style={({ isActive }) => {
-                return { color: isActive ? "Blue" : "Green" };
+                return { color: isActive ? "#fff" : "#a6c7e5" };
               }}
             >
               About
@@ -31,7 +33,7 @@ const Navbar = () => {
             <NavLink
               to="/projects"
               style={({ isActive }) => {
-                return { color: isActive ? "Blue" : "Green" };
+                return { color: isActive ? "#fff" : "#a6c7e5" };
               }}
             >
               Projects
@@ -41,7 +43,7 @@ const Navbar = () => {
             <NavLink
               to="/contact"
               style={({ isActive }) => {
-                return { color: isActive ? "Blue" : "Green" };
+                return { color: isActive ? "#fff" : "#a6c7e5" };
               }}
             >
               Contact

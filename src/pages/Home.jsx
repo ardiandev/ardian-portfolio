@@ -1,50 +1,79 @@
 import React from "react";
+import "../App.css";
+import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import {
+  SiReact,
+  SiRedux,
+  SiTailwindcss,
+  SiBootstrap,
+  SiTypescript,
+  SiHtml5,
+  SiCss3,
+  SiMongodb
+} from "react-icons/si";
+import { DiNodejs } from "react-icons/di";
 
 const Home = () => {
   return (
-    <>
-      <section className="px-4 mt-5">
-        <p className="text-5xl font-bold">Ardian Pradana</p>
-        <p className="text-2xl my-2">Front End Web Developer</p>
-        <p className="text-1lg my-3">
+    <div className="container mx-auto">
+      <section className="banner-section h-screen px-4 flex flex-col justify-start mt-[60px]">
+        <h2 className="text-[40px] sm:text-[80px] font-bold">Ardian Pradana</h2>
+        <p className="text-2xl ">Front End Web Developer</p>
+        <p className="text-lg my-3">
           I create inclusive, accessible front-end solutions for the web,
           ensuring equal access to all users.
         </p>
         <div>
-          <ul className="flex gap-2 text-1lg">
-            <li className="hover:underline hover:cursor-pointer">Twitter</li>
-            <li className="hover:underline hover:cursor-pointer">Github</li>
-            <li className="hover:underline hover:cursor-pointer">Linkedin</li>
-            <li className="hover:underline hover:cursor-pointer">Instagram</li>
+          <ul className="flex gap-4 text-1lg my-6">
+            <li className="hover:underline hover:cursor-pointer">
+              <Link to="/about">
+                <FaGithub
+                  style={{
+                    color: "#CCCCCC",
+                    fontSize: "30px",
+                    transition: "transform 0.2s"
+                  }}
+                  className="icon"
+                />
+              </Link>
+            </li>
+            <li className="hover:underline hover:cursor-pointer">
+              <FaLinkedin
+                style={{
+                  color: "#0a66c2",
+                  fontSize: "30px",
+                  transition: "transform 0.2s"
+                }}
+                className="icon"
+              />
+            </li>
+            <li className="hover:underline hover:cursor-pointer">
+              <FaTwitter
+                style={{
+                  color: "#1DA1F2",
+                  fontSize: "30px",
+                  transition: "transform 0.2s"
+                }}
+                className="icon"
+              />
+            </li>
+            <li className="hover:underline hover:cursor-pointer">
+              <FaInstagram
+                style={{
+                  color: "#E4405F",
+                  fontSize: "30px",
+                  transition: "transform 0.2s"
+                }}
+                className="icon"
+              />
+            </li>
           </ul>
-        </div>
-        <div className="my-20">
-          <p className="my-4 text-xl font-bold">About</p>
-          <article className="flex flex-col gap-3 text-2sm">
-            <p>
-              In 2019, I embraced web development, creating custom WordPress
-              themes and diving into coding. Since then, I've honed my skills on
-              front-end projects for agencies, start-ups, and companies.
-            </p>
-            <p>
-              In my current role, I lead front-end projects, collaborating
-              closely with clients to craft exceptional digital experiences.
-              Additionally, I share my expertise through YouTube tutorials,
-              focusing on a wide range of front-end development topics and
-              techniques.
-            </p>
-            <p>
-              Beyond coding, I cherish time swimming, running, and with my
-              family. Engaging in social initiatives, I contribute to
-              open-source projects and volunteer, aligning my passion for
-              technology with making a positive impact on the community.
-            </p>
-          </article>
         </div>
       </section>
 
       <section className="px-4 my-10">
-        <p className="uppercase text-lg font-bold my-4">Experience</p>
+        <p className="uppercase text-2xl font-bold my-4">Experience</p>
         <p className="text-1sm">2019 — Present</p>
         <p className="text-xl font-bold">Freelence Front End Web Developer</p>
         <p className="my-3">
@@ -52,51 +81,41 @@ const Home = () => {
           React, Redux, and Tailwind CSS. Create dynamic user interfaces,
           implement responsive designs, and optimize user experiences.
         </p>
-        <ul className="flex flex-wrap gap-2 text-red-800">
+        <ul className="flex gap-4 text-1lg my-6">
           <li>
-            <div className="flex items-center rounded-full  px-3 py-1 text-xs font-medium leading-5 bg-blue-400 ">
-              React
-            </div>
+            <SiReact style={{ color: "#61DAFB", fontSize: "24px" }} />
           </li>
           <li>
-            <div className="flex items-center rounded-full  px-3 py-1 text-xs font-medium leading-5 bg-blue-400 ">
-              Redux
-            </div>
+            <SiRedux style={{ color: "#764ABC", fontSize: "24px" }} />
           </li>
           <li>
-            <div className="flex items-center rounded-full  px-3 py-1 text-xs font-medium leading-5 bg-blue-400 ">
-              Tailwind
-            </div>
+            <SiTailwindcss style={{ color: "#06B6D4", fontSize: "24px" }} />
           </li>
           <li>
-            <div className="flex items-center rounded-full  px-3 py-1 text-xs font-medium leading-5 bg-blue-400 ">
-              Bootstrap
-            </div>
+            <SiBootstrap style={{ color: "#7952B3", fontSize: "24px" }} />
           </li>
           <li>
-            <div className="flex items-center rounded-full  px-3 py-1 text-xs font-medium leading-5 bg-blue-400 ">
-              Typscript
-            </div>
+            <SiTypescript style={{ color: "#3178C6", fontSize: "24px" }} />
           </li>
           <li>
-            <div className="flex items-center rounded-full  px-3 py-1 text-xs font-medium leading-5 bg-blue-400 ">
-              HTML5
-            </div>
+            <SiHtml5 style={{ color: "#E34F26", fontSize: "24px" }} />
           </li>
           <li>
-            <div className="flex items-center rounded-full  px-3 py-1 text-xs font-medium leading-5 bg-blue-400 ">
-              CSS3
-            </div>
+            <SiCss3 style={{ color: "#1572B6", fontSize: "24px" }} />
           </li>
         </ul>
       </section>
       <section className="px-4 my-10">
-        <p className="uppercase text-lg font-bold my-4">Project</p>
+        <p className="uppercase text-2xl font-bold my-4">Project</p>
         <div>
           <p className="text-xl font-bold">Build a Calculator</p>
           <div className="flex gap-2 my-2">
-            <p className="hover:underline hover:cursor-pointer">Github</p>
-            <p className="hover:underline hover:cursor-pointer ">Demo</p>
+            <p className="hover:underline hover:cursor-pointer underline ">
+              Github
+            </p>
+            <p className="hover:underline hover:cursor-pointer underline ">
+              Demo
+            </p>
           </div>
           <p className="my-3">
             Build a calculator using React, Redux, and Tailwind CSS. Utilize
@@ -104,39 +123,33 @@ const Home = () => {
             apply the flexible utility classes of Tailwind CSS to style the
             calculator with ease and efficiency.
           </p>
-          <ul className="flex flex-wrap gap-2 text-red-800">
+          <ul className="flex gap-4 text-1lg my-6">
             <li>
-              <div className="flex items-center rounded-full  px-3 py-1 text-xs font-medium leading-5 bg-blue-400 ">
-                React
-              </div>
+              <SiReact style={{ color: "#61DAFB", fontSize: "24px" }} />
             </li>
             <li>
-              <div className="flex items-center rounded-full  px-3 py-1 text-xs font-medium leading-5 bg-blue-400 ">
-                Redux
-              </div>
+              <SiRedux style={{ color: "#764ABC", fontSize: "24px" }} />
             </li>
             <li>
-              <div className="flex items-center rounded-full  px-3 py-1 text-xs font-medium leading-5 bg-blue-400 ">
-                Tailwind
-              </div>
+              <SiTailwindcss style={{ color: "#06B6D4", fontSize: "24px" }} />
             </li>
             <li>
-              <div className="flex items-center rounded-full  px-3 py-1 text-xs font-medium leading-5 bg-blue-400 ">
-                HTML5
-              </div>
+              <SiHtml5 style={{ color: "#E34F26", fontSize: "24px" }} />
             </li>
             <li>
-              <div className="flex items-center rounded-full  px-3 py-1 text-xs font-medium leading-5 bg-blue-400 ">
-                CSS3
-              </div>
+              <SiCss3 style={{ color: "#1572B6", fontSize: "24px" }} />
             </li>
           </ul>
         </div>
         <div className="my-9">
-          <p className="text-xl font-bold">Build a fullstack To Do App</p>
+          <p className="text-xl font-bold">Build a Fullstack To-Do App</p>
           <div className="flex gap-2 my-2">
-            <p className="hover:underline hover:cursor-pointer">Github</p>
-            <p className="hover:underline hover:cursor-pointer ">Demo</p>
+            <p className="hover:underline hover:cursor-pointer underline">
+              Github
+            </p>
+            <p className="hover:underline hover:cursor-pointer underline ">
+              Demo
+            </p>
           </div>
           <p className="my-3">
             Create a full-stack to-do app integrated with MongoDB. Develop the
@@ -146,36 +159,32 @@ const Home = () => {
             the combination of React, Redux, Tailwind CSS, and MongoDB for a
             robust and visually appealing to-do application.
           </p>
-          <ul className="flex flex-wrap gap-2 text-red-800">
+          <ul className="flex gap-4 text-1lg my-6">
             <li>
-              <div className="flex items-center rounded-full  px-3 py-1 text-xs font-medium leading-5 bg-blue-400 ">
-                React
-              </div>
+              <SiReact style={{ color: "#61DAFB", fontSize: "24px" }} />
             </li>
             <li>
-              <div className="flex items-center rounded-full  px-3 py-1 text-xs font-medium leading-5 bg-blue-400 ">
-                Redux
-              </div>
+              <SiRedux style={{ color: "#764ABC", fontSize: "24px" }} />
             </li>
             <li>
-              <div className="flex items-center rounded-full  px-3 py-1 text-xs font-medium leading-5 bg-blue-400 ">
-                Tailwind
-              </div>
+              <SiTailwindcss style={{ color: "#06B6D4", fontSize: "24px" }} />
             </li>
             <li>
-              <div className="flex items-center rounded-full  px-3 py-1 text-xs font-medium leading-5 bg-blue-400 ">
-                HTML5
-              </div>
+              <SiHtml5 style={{ color: "#E34F26", fontSize: "24px" }} />
             </li>
             <li>
-              <div className="flex items-center rounded-full  px-3 py-1 text-xs font-medium leading-5 bg-blue-400 ">
-                CSS3
-              </div>
+              <SiCss3 style={{ color: "#1572B6", fontSize: "24px" }} />
+            </li>
+            <li>
+              <SiMongodb style={{ color: "#47A248", fontSize: "24px" }} />
+            </li>
+            <li>
+              <DiNodejs style={{ color: "#339933", fontSize: "24px" }} />
             </li>
           </ul>
         </div>
       </section>
-    </>
+    </div>
   );
 };
 
