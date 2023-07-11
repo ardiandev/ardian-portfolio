@@ -1,0 +1,5 @@
+[[redirects]]
+    from = "/*"
+    to = "http://ardianpradana.com/"
+    status = 301
+    force = true
