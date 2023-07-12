@@ -2,7 +2,7 @@ import { NavLink, Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <header className="container mx-auto flex py-4 px-3 justify-between items-center sticky top-0 bg-[#0c2540] ">
+    <header className="container mx-auto flex py-6 px-3 justify-between items-center sticky top-0 bg-[#0c2540] ">
       <h1 className="font-bold text-2xl  round-full p-[4px] border-2">
         <Link to="/">AP</Link>
       </h1>
