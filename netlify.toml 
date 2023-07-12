@@ -1,5 +1,0 @@
-[redirects]
-    from = "https://dapper-sunflower-e1db69.netlify.app/"
-    to = "http://ardianpradana.com/"
-    status = 301
-    force = true
