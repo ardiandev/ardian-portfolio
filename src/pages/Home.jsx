@@ -74,7 +74,7 @@ const Home = () => {
         </button>
       </section>
 
-      <section className="px-4 mt-[140px]">
+      <section className="px-4 mt-[180px]">
         <p className="uppercase text-2xl font-bold my-4">Experience</p>
         <p className="text-1sm">2019 — Present</p>
         <p className="text-xl font-bold">Freelence Front End Web Developer</p>

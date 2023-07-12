@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <article className="px-3 mt-10 flex flex-col gap-4">
+    <article className="container mx-auto  px-3 mt-10 flex flex-col gap-4">
       <h3 className="text-2xl font-bold">About</h3>
       <p>
         Hello! I'm <strong>Ardian Pradana</strong>, a passionate front-end web
