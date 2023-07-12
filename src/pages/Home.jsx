@@ -17,7 +17,7 @@ import { DiNodejs } from "react-icons/di";
 const Home = () => {
   return (
     <div className="container mx-auto">
-      <section className="banner-section min-h-full px-4 flex flex-col justify-start mt-[90px]">
+      <section className="banner-section h-screen px-4 flex flex-col justify-start mt-[90px]">
         <h2 className="text-[40px] sm:text-[80px] font-bold">Ardian Pradana</h2>
         <p className="text-2xl ">Front End Web Developer</p>
         <p className="text-lg my-3">
@@ -74,7 +74,7 @@ const Home = () => {
         </button>
       </section>
 
-      <section className="px-4 mt-[180px]">
+      <section className="px-4">
         <p className="uppercase text-2xl font-bold my-4">Experience</p>
         <p className="text-1sm">2019 — Present</p>
         <p className="text-xl font-bold">Freelence Front End Web Developer</p>
